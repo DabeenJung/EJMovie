@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EJ MOVIE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id='banner'>
+    <div id="navbar">
+      <h3 id="logo" onclick="GoToMain()">EJ MOVIE</h3>
+      <p id='item1'>ACCOUNT</p>
+      <p id='item2' onclick="GoToSearch()">SEARCH</p>
+      <p id='item3'>RENT</p>
+      <p id='item4'>ABOUT</p>
+      <form action="#" method="get">
+        <input type="submit" value="LOGOUT" id="logout" />
+      </form>
+    </div>
+
+    <div id="moviebox">
+      <a href="#" id="left">&lt;</a>
+      <div id="poster">
+        <img src="imgs/poster3.png" alt="" id="movieposter">
+      </div>
+      <a href="#" id="right">&gt;</a>
+    </div>
+  </div>
+
+  <div id="userTable">
+    <h1>Who is the owner of DJ THEATRE?</h1>
+    <img src="imgs/profile.jpg" alt="" id="profilepic">
+    <p id="nameGrid">name: <span id="name"></span></p>
+    <p id="schGrid">school: <span id="school"></span></p>
+    <p id="ageGrid">age: <span id="age"></span></p>
+    <p id="emailGrid">email: <span id="email"></span></p>
+    <p id="phoneGrid">phone: <span id="phone"></span></p>
+  </div>
+
+  <div id="card">
+
+    <div id="bottomDiv"><a href="#banner" id="bottom">TOP</a></div>
+  </div>
+
+  <!-- #ad has the fixed size -->
+  <div id='ad'>
+    <img src="imgs/frozen.jpg" alt="" id='adimage'>
+    <div id='tickets'>GET TICKETS NOW!!!</div>
+    <div id='close'>X close</div>
+  </div>
+
+  <footer>Copyright &copy; 2021 - All Rights Reserved</footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
