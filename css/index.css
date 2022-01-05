@@ -30,7 +30,11 @@ body {
   cursor: pointer;
   justify-self: center;
 }
-#logo:hover {
+#logo a {
+  color: white;
+  text-decoration: none;
+}
+#logo a:hover {
   color: rgb(235,55,142, 0.8);
 }
 #navbar > p {
@@ -50,6 +54,13 @@ body {
 #item2 {
   grid-column: 3 / span 1;
   justify-self: end;
+}
+#item2 a {
+  color: white;
+  text-decoration: none;
+}
+#item2 a:hover {
+  color: rgb(235,55,142, 0.8);
 }
 #item3 {
   grid-column: 5 / span 1;
@@ -72,9 +83,14 @@ body {
   border: none;
   cursor: pointer;
   background-color: rgb(255, 57, 166, 0.6);
-  color: white;
   border-radius: 1em;
   transition: all 0.5s;
+  grid-column: 7 / span 1;
+  width: fit-content;
+}
+#logout a {
+  color: white;
+  text-decoration: none;
 }
 #logout:hover {
   padding: 0.9em 1.2em;
@@ -119,7 +135,7 @@ body {
   background-color: rgba(15, 15, 15, 0.955);
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 23% 13% 13% 13% 13% 13% 12%;
+  grid-template-rows: 23% 6% 16% 16% 16% 16% 7%;
   grid-template-columns: 15% 35% 50%;
 }
 #userTable h1 {
@@ -130,6 +146,16 @@ body {
   grid-row: 1 / span 1;
   grid-column: 1 / span 3;
   margin: auto;
+}
+#links {
+  color: rgb(235,55,142, 0.8);
+  text-decoration: none;
+}
+#nameGrid {
+  grid-row: 2 / span 2;
+}
+#schoolGrid {
+  grid-row: 4 / span 1;
 }
 #userTable p {
   color: rgb(235,55,142, 0.8);
@@ -155,7 +181,7 @@ body {
 }
 .box {
   display: grid;
-  grid-template-rows: 85% 9% 5%;
+  grid-template-rows: 85% 7% 7%;
 }
 .box img {
   width: 100%;

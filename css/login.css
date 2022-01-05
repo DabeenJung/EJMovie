@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+    background: url("/imgs/cinema.jpg") center/cover fixed;
+    backdrop-filter: blur(8px);
+    margin: 0px;
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+    align-items: end;
+}
+#invisi {
+    visibility: hidden;
+    margin-top: 45px;
+}
+#name {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    margin: 70px auto 40px;
+}
+#firebaseui-auth-container {
+    margin: 0 auto;
+    /* position: absolute;
+    top: 280px; */
+}
