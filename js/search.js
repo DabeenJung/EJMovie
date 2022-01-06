@@ -66,7 +66,7 @@ function getMovie() {
               ${movie.overview}
               <hr>
               <a href="http://imdb.com/title/${movie.imdb_id}" target="_blank" class="btn btn-primary">View IMDB</a>
-              <a href="index.html" class="btn btn-default">Go Back To Search</a>
+              <a href="search.html" class="btn btn-default">Go Back To Search</a>
             </div>
           </div>
       `;

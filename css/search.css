@@ -23,7 +23,11 @@ body {
     cursor: pointer;
     justify-self: center;
 }
-#logo:hover {
+#logo a {
+    color: white;
+    text-decoration: none;
+}
+#logo a:hover {
     color: rgb(235,55,142, 0.8);
 }
 #navbar > p {
@@ -43,6 +47,13 @@ body {
 #item2 {
     grid-column: 3 / span 1;
     justify-self: end;
+}
+#item2 a {
+    color: white;
+    text-decoration: none;
+}
+#item2 a:hover {
+    color: rgb(235,55,142, 0.8);
 }
 #item3 {
     grid-column: 5 / span 1;
@@ -65,9 +76,14 @@ body {
     border: none;
     cursor: pointer;
     background-color: rgb(255, 57, 166, 0.6);
-    color: white;
     border-radius: 1em;
     transition: all 0.5s;
+    grid-column: 7 / span 1;
+    width: fit-content;
+}
+#logout a {
+    color: white;
+    text-decoration: none;
 }
 #logout:hover {
     padding: 0.9em 1.2em;
@@ -75,7 +91,8 @@ body {
 #searchBox {
     margin: 50px auto;
     background: rgba(24, 23, 23, 0.955);
-    border-radius: 8px;
+    border-radius: 6px;
+    padding: 0;
 }
 .jumbotron {
     padding: 70px 55px;
@@ -89,9 +106,35 @@ footer {
     margin: auto 0;
     padding: 25px 0;
 }
-
+.btn-primary {
+    /* background-color: #992264 !important;
+    border-color: #992264 !important; */
+    background-color: transparent !important;
+    border: 2px solid #992264;
+    color: #992264;
+    font-weight: 900;
+    transform: translate3d(0, 0, 0);
+    transition: color 0.3s, background-color 3.0s transform 0.15s;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: #992264 !important;
+    border: 2px solid #992264;
+    font-weight: 500;
+}
+.well {
+    background-color: rgba(24, 23, 23, 0.955);
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 19px;
+}
+.well h5 {
+    font-size: 20px;
+    margin: 10px 0;
+}
 #movies img, #movie img{
-    height: 240px;
+    /* height: 250px; */
+    width: 100%;
 }
   
 @media(min-width:960px){

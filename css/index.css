@@ -70,11 +70,6 @@ body {
   grid-column: 6 / span 1;
   justify-self: start;
 }
-#navbar > form {
-  grid-column: 7 / span 1;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 #logout {
   font-family: 'Varela Round', sans-serif;
   letter-spacing: 1px;

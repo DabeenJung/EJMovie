@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0px;
+}
+#navbar {
+    border-bottom: 1px solid white; 
+    background-color: black;
+    display: grid;
+    grid-template-columns: 12.5% 10% 10% 34% 10% 10% 13.5%;
+    height: 11vh;
+    color: white;
+}
+#logo {
+    display: inline;
+    font-family: 'Acme', sans-serif;
+    font-size: 3.5vw;
+    margin: 14px;
+    grid-column: 4 / span 1;
+    cursor: pointer;
+    justify-self: center;
+}
+#logo a {
+    color: white;
+    text-decoration: none;
+}
+#logo a:hover {
+    color: rgb(235,55,142, 0.8);
+}
+#navbar > p {
+    grid-row: 1 / span 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+#navbar > p:hover {
+    color: rgb(235,55,142, 0.8);
+}
+#item1 {
+    grid-column: 2 / span 1;
+    justify-self: end;
+}
+#item2 {
+    grid-column: 3 / span 1;
+    justify-self: end;
+}
+#item2 a {
+    color: white;
+    text-decoration: none;
+}
+#item2 a:hover {
+    color: rgb(235,55,142, 0.8);
+}
+#item3 {
+    grid-column: 5 / span 1;
+    justify-self: start;
+}
+#item4 {
+    grid-column: 6 / span 1;
+    justify-self: start;
+}
+#navbar > form {
+    grid-column: 7 / span 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#logout {
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.15vw;
+    padding: 0.8em 1em;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 57, 166, 0.6);
+    border-radius: 1em;
+    transition: all 0.5s;
+    grid-column: 7 / span 1;
+    width: fit-content;
+}
+#logout a {
+    color: white;
+    text-decoration: none;
+}
+#logout:hover {
+    padding: 0.9em 1.2em;
+}
+#searchBox {
+    margin: 50px auto;
+    background: rgba(24, 23, 23, 0.955);
+    border-radius: 8px;
+}
+.jumbotron {
+    padding: 70px 55px;
+}
+footer {
+    background-color: black;
+    grid-row: 6 / span 1;
+    font-size: small;
+    color: white;
+    text-align: center;
+    margin: auto 0;
+    padding: 25px 0;
+}
+#movies img, #movie img{
+    width: 100%;
+}
+.container {
+    padding: 15px
+}
+.col-md-8 h2 {
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.btn-primary {
+    background-color: #992264 !important;
+    border-color: #992264 !important;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #282828;
+    border: #282828;
+    border-radius: 4px;
+    transition: border .2s;
+}
+.well h3 {
+    font-weight: 400;
+}
+@media(min-width:960px){
+    #movies .col-md-3 .well{
+      height: 390px;
+    }
+  
+    #movies .col-md-3 img{
+      height: 240px;
+    }
+}

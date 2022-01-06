@@ -27,20 +27,18 @@
 
 <body>
     <div id="navbar">
-        <h3 id="logo" onclick="GoToMain()">EJ MOVIE</h3>
+        <h3 id="logo"><a href="index.html">EJ MOVIE</a></h3>
         <p id='item1'>ACCOUNT</p>
-        <p id='item2' onclick="GoToSearch()">SEARCH</p>
+        <p id='item2'><a href="search.html">SEARCH</a></p>
         <p id='item3'>RENT</p>
         <p id='item4'>ABOUT</p>
-        <form action="/logout" method="get">
-            <input type="submit" value="LOGOUT" id="logout" />
-        </form>
+        <p id="logout"><a href="login.html" id="login">LOGIN</a></p>
     </div>
 
     <div class="container" id="searchBox">
         <div class="jumbotron">
             <h3 class="text-center">Search For Any Movie</h3>
-            <form action="" id="searchForm">
+            <form id="searchForm">
                 <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
             </form>
         </div>
