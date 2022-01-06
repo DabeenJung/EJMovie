@@ -16,9 +16,15 @@ body {
 #name {
     font-size: 50px;
     text-align: center;
-    color: white;
     font-family: 'Acme', sans-serif;
     margin: 70px auto 40px;
+}
+#name a {
+    color: white;
+    text-decoration: none;
+}
+#name a:hover {
+    color: rgb(235,55,142, 0.8);
 }
 #firebaseui-auth-container {
     margin: 0 auto;

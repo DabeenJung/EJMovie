@@ -24,20 +24,27 @@ function movieInfo() {
     location.href = "movie.html";
 }
 
-// function checkLogin() {
-//     // firebase.auth().onAuthStateChanged(user => {
-//     //     if (user) {
-//     //         cuurentUser = db.collection("users").doc(user.uid);
-//     //     }
-//     // })
-//     user = firebase.auth().cuurentUser;
-//     if (user) {
-//         document.getElementById("logout").innerHTML = "logout";
-//     } else {
-//         document.getElementById("logout").innerHTML = "login";
-//     }
-// }
-// checkLogin();
+function checkLogInandOut() {
+    firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+            // currentUser = db.collection("users").doc(user.uid);
+            document.getElementById("logout").innerHTML = "LOGOUT";
+        } else {
+            document.getElementById("logout").innerHTML = "LOGIN";
+        }
+    })
+}
+checkLogInandOut();
+
+function goToLogin() {
+    firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+            firebase.auth().signOut();
+        } else {
+            window.location.href = "login.html";
+        }
+    })
+}
 
 function displayAllMovies() {
     movieDB.get().then(allMovies => {
@@ -57,7 +64,7 @@ function addMovies(doc) {
     img.setAttribute("src", "imgs/" + imgName + ".jpg");
     let title = document.createElement("div");
     let name = document.createElement("h2");
-    name.innerHTML = (i+1) + ". " + doc.data().name;
+    name.innerHTML = (i + 1) + ". " + doc.data().name;
     name.setAttribute("class", "name");
     let rating = document.createElement("p");
     rating.innerHTML = doc.data().rating;
