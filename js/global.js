@@ -50,4 +50,4 @@ function checkLoginResult() {
     ui.start('#firebaseui-auth-container', uiConfig);
 }
 
-checkLoginResult();
+checkLoginResult(); 

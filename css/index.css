@@ -126,7 +126,7 @@ body {
   grid-column: 3 / span 1;
   grid-row: 1 / span 3;
   margin: auto 0;
-}
+} 
 #userTable {
   width: 100%;
   grid-row: 5 / span 1;
