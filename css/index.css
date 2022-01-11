@@ -192,11 +192,12 @@ body {
   grid-template-rows: 33% 33% 33% 1%;
 }
 .box {
+  height: max-content;
   display: grid;
   grid-template-rows: 85% 7% 7%;
 }
 .box img {
-  width: 100%;
+  width: 97%;
   grid-row: 1 / span 1;
 }
 .title {
@@ -439,18 +440,18 @@ footer {
     margin: 30px;
   }
   #card {
-    grid-template-columns: 35% 30% 33%;
+    grid-template-columns: 31% 38% 29%;
     grid-gap: 0;
     grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
   }
   .box img {
-    width: 100%;
+    width: 97%;
   }
   .box div {
-    width: 100%;
+    width: 97%;
   }
   .box {
-    grid-template-rows: 77% 9% 14%;
+    grid-template-rows: 79% 7% 14%;
   }
   #id0 {
     grid-row: 1 / span 1;
