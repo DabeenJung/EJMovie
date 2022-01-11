@@ -98,10 +98,11 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 #moviebox {
-  display: grid;
   height: 59vh;
+  display: grid;
   grid-template-columns: 17% 3% 60% 3% 17%;
   grid-template-rows: 35% 30% 35%;
+  background-color: #191919;
 }
 #left {
   grid-row: 2 / span 1;
@@ -117,7 +118,10 @@ body {
   color: rgb(235,55,142, 0.8);
 }
 #movieposter {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 100%;
+  display: inline-block;
 }
 #poster {
   grid-column: 3 / span 1;
@@ -175,8 +179,8 @@ body {
   grid-column: 3 / span 1;
 }
 #profilepic {
-  width: 13vw;
-  border-radius: 7em;
+  width: 37%;
+  border-radius: 100%;
   grid-row: 2 / span 5;
   grid-column: 2 / span 1;
   margin: auto;
