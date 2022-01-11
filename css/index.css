@@ -6,8 +6,8 @@ body {
   font-family: 'Varela Round', sans-serif;
   margin: 0px;
   display: grid;
-  height: 257vh;
-  grid-template-rows: 70vh 5vh 135vh 5vh 35vh 7vh;
+  height: 260vh;
+  grid-template-rows: 70vh 8vh 135vh 5vh 35vh 7vh;
 }
 #banner {
   grid-row: 1 / span 1;
@@ -98,7 +98,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 #moviebox {
-  height: 59vh;
+  height: 62vh;
   display: grid;
   grid-template-columns: 17% 3% 60% 3% 17%;
   grid-template-rows: 35% 30% 35%;
@@ -118,10 +118,9 @@ body {
   color: rgb(235,55,142, 0.8);
 }
 #movieposter {
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 100%;
-  display: inline-block;
+  margin: auto;
+  width: 96%;
+  display: inherit;
 }
 #poster {
   grid-column: 3 / span 1;
@@ -135,7 +134,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-rows: 23% 2% 1% 16% 16% 19% 16% 7%;
-  grid-template-columns: 15% 35% 50%;
+  grid-template-columns: 18% 35% 47%;
 }
 #userTable h1 {
   color: rgb(235,55,142, 0.8);
@@ -191,7 +190,7 @@ body {
 #card {
   grid-row: 3 / span 1;
   display: grid;
-  grid-template-columns: 19% 14% 14% 14% 14% 19%;
+  grid-template-columns: 20% 14% 14% 14% 14% 18%;
   grid-gap: 1em;
   grid-template-rows: 33% 33% 33% 1%;
 }
@@ -444,6 +443,7 @@ footer {
     margin: 30px;
   }
   #card {
+    height: fit-content;
     grid-template-columns: 31% 38% 29%;
     grid-gap: 0;
     grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
